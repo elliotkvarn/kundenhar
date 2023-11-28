@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap');
+
 #wrapper {
     display: grid;
     height: 200vh;
     width: 100%;
     grid-template-rows: 10vh 90vh 30vh 50vh 10vh;
-    grid-template-columns: 75vw 25vw;
+    grid-template-columns: 75% 25%;
     grid-template-areas:
         'hd hd'
         'mn mn'
-        'dsc dsc'
+        'desc desc'
         'etr etr'
         'ft ft';
 }
@@ -45,8 +47,17 @@ a {
     background-image: url("../img/gym.jpg");
     /* background-position: center; */
     background-size:cover;
+    filter: brightness(50%)
 }
 
 .center {
     text-align: center;
+}
+
+h1 {
+    font-size:100px;
+    color:aquamarine;
+    text-shadow: 3px 3px black;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
 }
