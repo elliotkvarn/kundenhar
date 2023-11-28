@@ -1,0 +1,52 @@
+#wrapper {
+    display: grid;
+    height: 200vh;
+    width: 100%;
+    grid-template-rows: 10vh 90vh 30vh 50vh 10vh;
+    grid-template-columns: 75vw 25vw;
+    grid-template-areas:
+        'hd hd'
+        'mn mn'
+        'dsc dsc'
+        'etr etr'
+        'ft ft';
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    grid-area: hd;
+    background-color:#537c50;
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    height:10vh;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    width:25vw;
+    padding-top: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 22px;
+}
+
+#mainindex {
+    grid-area: mn;
+    background-image: url("../img/gym.jpg");
+    /* background-position: center; */
+    background-size:cover;
+}
+
+.center {
+    text-align: center;
+}
