@@ -9,7 +9,7 @@
     grid-template-areas:
         'hd hd'
         'mn mn'
-        'desc desc'
+        'desc as'
         'etr etr'
         'ft ft';
 }
@@ -27,6 +27,7 @@ header {
     left: 0;
     right: 0;
     height:10vh;
+    z-index: 10;
 }
 
 nav {
@@ -48,6 +49,10 @@ a {
     /* background-position: center; */
     background-size:cover;
     filter: brightness(50%)
+}
+
+#desc {
+    grid-area:desc;
 }
 
 .center {
