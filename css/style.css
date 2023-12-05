@@ -60,6 +60,8 @@ a {
     border:1px solid black;
     margin:5px;
     padding:5px;
+    display:flex;
+    
 }
 
 .padding {
@@ -78,6 +80,12 @@ input[type=text]:focus {
 
 button:hover {
     background-color: lightblue;
+}
+
+#loginbutton {
+    width:35%;
+    height:20px;
+    font-size: 14px;
 }
 #forummain {
     grid-area:forum;
