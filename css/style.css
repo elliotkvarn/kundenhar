@@ -5,13 +5,25 @@
     height: 190vh;
     width: 100%;
     grid-template-rows: 10vh 90vh 30vh 50vh 10vh;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 1fr 30vh;
     grid-template-areas:
         'hd hd'
         'mn mn'
         'desc as'
         'sc sc'
         'ft ft';
+}
+
+#wrapperforum {
+    display: grid;
+    height:auto;
+    width:100%;
+    grid-template-rows: 10vh minmax(100vh,auto) 10vh;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    'hd hd'
+    'forum info'
+    'ft ft';
 }
 
 body {
@@ -43,12 +55,136 @@ a {
     font-size: 22px;
 }
 
+#info {
+    grid-area:info;
+    border:1px solid black;
+    margin:5px;
+    padding:5px;
+}
+
+.padding {
+    padding:5px;
+}
+
+.login {
+    width:70%;
+    padding:2px;
+    margin:2px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+#forummain {
+    grid-area:forum;
+    display:flex;
+    flex-direction: column;
+    margin:5px;
+}
+
+#threads {
+    border: 1px solid black;
+}
+
+#topic {
+    border-bottom: 1px dotted black;
+    font-size:24px;
+}
+
+.topic {
+    font-size: 24px;
+}
+
+.question {
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    height:80px;
+    padding:5px;
+}
+
+.voices {
+    position: absolute;
+    left:600px;
+    font-size: 16px;
+}
+
+.posts {
+    position:absolute;
+    left:675px;
+    font-size: 16px;
+}
+
+.latest {
+    position: absolute;
+    left:750px;
+    font-size:16px;
+}
+
+.started {
+    font-size:16px;
+
+}
+
+#pages {
+    display:flex;
+    justify-content: flex-end;
+}
+
+#search {
+    height:20px;
+}
+
+.searchbutton {
+    height:20px;
+    width:120px;
+    font-size:14px;
+
+}
+.pageselect {
+    width:30px;
+    height:30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#pages2 {
+    display:flex;
+    justify-content: center;
+}
+
+.pageselect2 {
+    width:40px;
+    height:40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#logo {
+    height:10vh;
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-size: 30px;
+}
 #mainindex {
     grid-area: mn;
     background-image: url("../img/gym.jpg");
     /* background-position: center; */
     background-size:cover;
     filter: brightness(50%)
+}
+
+button {
+    width:400px;
+    font-size: 30px;
+    height:40px;
+
 }
 
 #desc {
@@ -58,17 +194,25 @@ a {
 
 #as {
     grid-area: as;
-    background-color: blueviolet;
+    background-color: #4CAF50;
+    background-image: url("../img/running.jpg");
+    border:3px solid black;
+    border-radius: 10000px;
+    background-size: cover;
+    background-position: center center;
 }
 
 #sc {
     grid-area: sc;
-    background-color: crimson;
+    background-color:black; 
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #ft {
     grid-area: ft;
-    background-color: deepskyblue;
+    background-color:#537c50;
 }
 
 .center {
