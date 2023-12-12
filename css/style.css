@@ -27,6 +27,19 @@
     'ft ft';
 }
 
+#wrapperguides {
+    display: grid;
+    height:auto;
+    width:100%;
+    grid-template-rows: 10vh 20vh 60vh 10vh;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'hd'
+    'guidestitle'
+    'guides'
+    'ft';
+}
+
 body {
     margin: 0;
 }
