@@ -31,17 +31,21 @@
     display: grid;
     height:auto;
     width:100%;
-    grid-template-rows: 10vh 20vh 60vh 10vh;
+    grid-template-rows: 10vh 20vh auto 10vh;
     grid-template-columns: 100%;
     grid-template-areas:
     'hd'
     'guidestitle'
     'guides'
-    'ft';
+    'ftg';
 }
 
 body {
     margin: 0;
+}
+
+.margin0 {
+    margin:0;
 }
 
 header {
@@ -213,6 +217,41 @@ button:hover {
     display: flex;
     align-items: center;
 }
+
+#cardstitle {
+    grid-area: guidestitle;
+    background-color: #332F2C;
+}
+
+.guide {
+    width:20vw;
+    height:60vh;
+    background-color: #455B46;
+    padding:20px;
+    /*margin:20px;*/
+}
+
+#foot {
+    grid-area:ftg;
+    background-color:#537c50;
+    text-align: center;
+}
+
+#cards {
+    grid-area: guides;
+    display:flex;
+    justify-content: space-evenly;
+    padding:50px;
+    background-color: #332F2C;
+}
+
+#guidesbutton {
+    margin:2vh;
+    width: auto;
+    height:60%;
+    background-color: #614CB0;
+}
+
 
 #title {
     font-size: 30px;
